@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD COM FIREBASE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body onload="Read()">
+    <header>
+        <H1>CRUD <b>Cliente</b></H1>
+    </header>
+    <main>
+        <section>
+            <h2>Usuário</h2>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="email" placeholder="E-mail">
+            <input type="text" id="senha" placeholder="Senha">
+            <input type="hidden" id="id">
+            <button id="salvar" onclick="Save()">Salvar</button>
+        </section>
+        <section>
+            <h2>Relação de Usuários</h2>
+            <div id="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Senha</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dados">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src='main.js'></script>
+</body>
+
+</html>

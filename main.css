@@ -1,0 +1,116 @@
+@import url('https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HeaderHeight: 12vh;
+    --SectionHeight: calc(100vh - var(--HeaderHeight));
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #333;
+    color: white;
+    overflow-x:hidden;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    height: var(--HeaderHeight);
+}
+
+header b {
+    color: #ffff00;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main section {
+    width: 50vw;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    main section {
+        width: 100vw;
+        height: fit-content;
+    }
+    section table th:first-child, section table td:first-child{
+        display: none;
+    }
+    div#container{
+        width: 100%;
+        display: block;
+        text-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    
+}
+
+main section:first-child {
+    background-color: #444;
+}
+
+section {
+    height: var(--SectionHeight);
+}
+input, button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+button{
+    border-color:#333;
+    background-color: #333;
+    color: white;
+    cursor: pointer;    
+}
+button:hover{
+    background-color: #ff0;
+    color:#333;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:10px;
+}
+table th{
+    background-color: #222;
+    color: white;
+}
+table, th, td{
+    border: 2px solid #555;
+    padding:10px;
+}
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+tr:hover{
+    background-color: yellow;
+    color: #333;
+    cursor: pointer;
+}
+table i{
+    margin-right:10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
